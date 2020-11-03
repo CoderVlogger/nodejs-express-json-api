@@ -18,12 +18,12 @@ Currently aviable parts and their branches:
 
 #### Part 1: Build a JSON API in Node.js
 
-- Link to the tutorial: https://kananrahimov.com/post/example-backend-api-in-node-js-video-tutorial/#h-part-1-build-a-json-api-in-node-js
+- Tutorial: https://kananrahimov.com/post/example-backend-api-in-node-js-video-tutorial/#h-part-1-build-a-json-api-in-node-js
 
-- Link to the branch: https://github.com/CoderVlogger/nodejs-express-json-api/tree/step1-json-api-package-json
+- Source code: https://github.com/CoderVlogger/nodejs-express-json-api/tree/step1-json-api-package-json
 
-#### Part 2: Convert to a package and use Nodemon
+#### Part 2: Introduce package.json and use nodemon
 
-- Link to the tutorial: https://kananrahimov.com/post/example-backend-api-in-node-js-video-tutorial/#h-part-2-convert-to-a-package-and-use-nodemon
+- Tutorial: https://kananrahimov.com/post/example-backend-api-in-node-js-video-tutorial/#h-part-2-introduce-package-json-and-use-nodemon
 
-- Link to the branch: https://github.com/CoderVlogger/nodejs-express-json-api/tree/step1-json-api-package-json
+- Source code: https://github.com/CoderVlogger/nodejs-express-json-api/tree/step1-json-api-package-json
