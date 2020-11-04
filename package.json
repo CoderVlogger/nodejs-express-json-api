@@ -1,5 +1,5 @@
 {
-  "name": "demoapi",
+  "name": "demojsonapi",
   "version": "1.0.0",
   "description": "Demo JSON API.",
   "main": "app.js",
