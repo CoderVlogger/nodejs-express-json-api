@@ -18,6 +18,8 @@ Currently aviable parts and their branches:
 
 #### Part 1: Build a JSON API in Node.js
 
+[![Watch Part 1 on YouTube](https://img.youtube.com/vi/4q3tDKS21zo/0.jpg)](https://youtu.be/4q3tDKS21zo)
+
 - Initialize an empty Node.js project.
 - Create a very simple web app.
 - Return a JSON response using the HTTP package.
@@ -28,6 +30,8 @@ Currently aviable parts and their branches:
 
 #### Part 2: Introduce package.json and use nodemon
 
+[![Watch Part 2 on YouTube](https://img.youtube.com/vi/I3nc740Z2Ho/0.jpg)](https://youtu.be/I3nc740Z2Ho)
+
 - Introduce package.json for project dependencies.
 - Introduce nodemon to the project for hot-reload.
 - Shortly about GitHub repo for the course.
@@ -37,6 +41,8 @@ Currently aviable parts and their branches:
 - Source code: https://github.com/CoderVlogger/nodejs-express-json-api/tree/step1-json-api-package-json
 
 #### Part 3: Convert to Express.js web framework
+
+[![Watch Part 3 on YouTube](https://img.youtube.com/vi/xPcq6dF3yNw/0.jpg)](https://youtu.be/xPcq6dF3yNw)
 
 - Introduce Express.js - a popular Node-based web framework.
 - Convert pure Node HTTP app to Express.js application.
