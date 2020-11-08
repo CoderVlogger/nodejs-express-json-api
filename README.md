@@ -53,6 +53,8 @@ Currently aviable parts and their branches:
 
 #### Part 4: Accept URL params and return JSON object by using Express.js features
 
+[![Watch Part 4 on YouTube](https://img.youtube.com/vi/agWnf1qa-6s/0.jpg)](https://youtu.be/agWnf1qa-6s)
+
 In this part:
 
 - Using builtin Express.js function resp.json() to return a JSON body.
