@@ -21,6 +21,20 @@ app.get('/', (req, res) => {
   res.json(responseBody);
 })
 
+app.get('/echo/:name/', (req, res) => {
+  const { name } = req.params;
+  let body = {
+    "message": `Hello, ${name}!`,
+    "items": [
+      "str1",
+      "str2",
+      "str3"
+    ]
+  };
+
+  res.json(body);
+})
+
 app.listen(port, () => {
   console.log(`Example app running at ${port} port`);
 })
