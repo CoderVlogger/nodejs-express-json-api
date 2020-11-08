@@ -50,3 +50,14 @@ Currently aviable parts and their branches:
 - Tutorial: https://kananrahimov.com/post/example-backend-api-in-node-js-video-tutorial/#h-part-3-convert-pure-node-js-api-to-express-js-web-server
 
 - Source code: https://github.com/CoderVlogger/nodejs-express-json-api/tree/step2-express-js-server
+
+#### Part 4: Accept URL params and return JSON object by using Express.js features
+
+In this part:
+
+- Using builtin Express.js function resp.json() to return a JSON body.
+- Routing and req.params for the input parameters in the URL.
+
+- Tutorial: https://kananrahimov.com/post/example-backend-api-in-node-js-video-tutorial/#h-part-4-accept-url-params-and-return-json-object-by-using-express-js-features
+
+- Source code: https://github.com/CoderVlogger/nodejs-express-json-api/tree/step3-expressjs-json
