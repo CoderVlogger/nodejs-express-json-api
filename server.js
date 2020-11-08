@@ -6,8 +6,6 @@ const app = express();
 const port = 3000;
 
 app.get('/', (req, res) => {
-  res.setHeader('Content-Type', 'application/json');
-
   let body = {
     "message": "Hello, world!",
     "items": [
@@ -20,7 +18,7 @@ app.get('/', (req, res) => {
   const { headers, method, query, url } = req;
   const responseBody = { headers, method, query, url, body };
 
-  res.send(JSON.stringify(responseBody));
+  res.json(responseBody);
 })
 
 app.listen(port, () => {
