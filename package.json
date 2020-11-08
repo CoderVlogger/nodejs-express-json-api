@@ -4,6 +4,7 @@
   "description": "Demo JSON API.",
   "main": "app.js",
   "scripts": {
+    "repl": "node app.js",
     "dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -2,7 +2,7 @@ const express = require('express');
 
 const app = express();
 
-const hostname = '127.0.0.1';
+//const hostname = '127.0.0.1';
 const port = 3000;
 
 app.get('/', (req, res) => {
@@ -13,7 +13,8 @@ app.get('/', (req, res) => {
     "items": [
       "str1",
       "str2",
-      "str3"
+      "str3",
+      "Hello, world in item 4"
     ]
   };
   const { headers, method, query, url } = req;
@@ -22,6 +23,6 @@ app.get('/', (req, res) => {
   res.send(JSON.stringify(responseBody));
 })
 
-app.listen(port, hostname, () => {
-  console.log(`Example app listening at http://${hostname}:${port}`);
+app.listen(port, () => {
+  console.log(`Example app running at ${port} port`);
 })
