@@ -1,27 +1,52 @@
-const express = require('express');
+const express = require("express");
 
 const app = express();
 
-const hostname = '127.0.0.1';
+const hostname = "127.0.0.1";
 const port = 3000;
 
-app.get('/', (req, res) => {
-  res.setHeader('Content-Type', 'application/json');
+let posts = [
+  { id: 1, slug: "post1", title: "Post #1", author: "Alex" },
+  { id: 2, slug: "post2", title: "Post #2", author: "John" },
+  { id: 3, slug: "post3", title: "Post #3", author: "Boris" },
+];
+
+function createError(status, message) {
+  var err = new Error(message);
+  err.status = status;
+  return err;
+}
+
+app.get("/posts/", (req, res) => {
+  res.setHeader("Content-Type", "application/json");
 
   let body = {
-    "message": "Hello, world!",
-    "items": [
-      "str1",
-      "str2",
-      "str3"
-    ]
+    posts: posts,
   };
-  const { headers, method, query, url } = req;
-  const responseBody = { headers, method, query, url, body };
 
-  res.send(JSON.stringify(responseBody));
-})
+  res.send(JSON.stringify(body));
+});
+
+// TODO: Pass post id as a func param.
+app.get("/posts/:post/", (req, res, next) => {
+  const { post } = req.params;
+  postID = post - 1;
+
+  res.setHeader("Content-Type", "application/json");
+
+  if (posts[postID]) {
+    next();
+  } else {
+    next(createError(404, "failed to find post"));
+  }
+
+  let body = {
+    post: posts[postID],
+  };
+
+  res.send(JSON.stringify(body));
+});
 
 app.listen(port, hostname, () => {
   console.log(`Example app listening at http://${hostname}:${port}`);
-})
+});
